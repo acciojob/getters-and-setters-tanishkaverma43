@@ -4,6 +4,15 @@ class Person {
 	this.name= name;
 	this.age= age;
 }
+
+	get name() {
+		return this._name;
+	}
+
+	set age(newAge) {
+		this._age = newAge;
+	}
+	
 }
 
 class Student extends Person {
@@ -21,8 +30,8 @@ class Teacher extends Person {
 let student  = new Student("Tanishka", 20);
 let teacher = new Teacher("Krishna", 21);
 
-student.study(); // Output: Tanishka is studying
-teacher.teach(); // Output: Krishna is teachin
+student.study(); 
+teacher.teach(); 
 
 // Do not change the code below this line
 window.Person = Person;
